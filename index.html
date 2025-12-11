@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Shirt Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">T-ShirtShop</div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-btn" id="menu-btn">☰</div>
+
+    <div class="mobile-menu" id="Mobile-Menu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <div class="home-text">
+      <h1>Premium Quality T-Shirts</h1>
+      <p>Comfortable • Stylish • Affordable • GoodLooking</p>
+      <button class="home-btn">Home</button>
+    </div>
+
+    <div class="home-img">
+      <img src="assets/T-1.png" alt="">
+    </div>
+  </section>
+
+  <!-- PRODUCT CARDS -->
+  <section id="products">
+    <h2>Our Latest Collection</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/T-2.png" alt="T-shirt-1">
+        </div>
+        <h3>Red-Color</h3>
+        <p>Soft cotton fabric with premium print.</p>
+        <p id="price">price<span>$2.00</span></p>
+        <button>Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/T-3.png" alt="T-shirt-2" id="Third-img">
+        </div>
+        <h3>Blue-Color</h3>
+        <p>Comfortable fit with modern styling.</p>
+        <p id="price">price <span>$3.00</span></p>
+        <button>Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/T-4.png" alt="T-shirt-3" id="fourth-img">
+        </div>
+        <h3>Yellow-Color</h3>
+        <p>Perfect for casual and daily wear.</p>
+        <p id="price">price <span>$4.00</span></p>
+        <button>Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 T-ShirtShop — All Rights Reserved | Designed by Ahmed</p>
+  </footer>
+
+
+  <script>
+    const menubtn = document.querySelector('#menu-btn')
+    const menubar = document.querySelector('#Mobile-Menu')
+    menubtn.addEventListener('click', () => {
+      menubar.classList.toggle('show')
+    })
+  </script>
+</body>
+
+</html>
